@@ -12,7 +12,7 @@
          "remark": "Simple HTTP Service with Round-Robin Load Balancing",
          "myfirstas3app": {
              "class": "Tenant",
-             "A0": {
+             "A10": {
                  "class": "Application",
                  "template": "http",
                  "serviceMain": {
@@ -20,9 +20,9 @@
                      "virtualAddresses": [
                          "10.1.13.10"
                      ],
-                     "pool": "A0_web_pool"
+                     "pool": "A10_web_pool"
                  },
-                 "A0_web_pool": {
+                 "A10_web_pool": {
                      "class": "Pool",
                      "monitors": [
                          "http"
@@ -38,7 +38,7 @@
                      ]
                  }
              },
-             "A1": {
+             "A11": {
                 "class": "Application",
                 "template": "http",
                 "serviceMain": {
@@ -46,9 +46,9 @@
                     "virtualAddresses": [
                         "10.1.13.20"
                     ],
-                    "pool": "A1_web_pool"
+                    "pool": "A11_web_pool"
                 },
-                "A1_web_pool": {
+                "A11_web_pool": {
                     "class": "Pool",
                     "monitors": [
                         "http"
